@@ -3,7 +3,7 @@
   "displayName": "Academic Lab Advisor",
   "description": "Generate structured Jupyter notebooks for data science learning.",
   "version": "0.1.0",
-  "publisher": "academiclab",
+  "publisher": "AcademicLabEdu2",
   "license": "MIT",
   "repository": {
     "type": "git",
