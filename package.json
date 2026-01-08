@@ -1,0 +1,79 @@
+{
+  "name": "academic-lab-advisor",
+  "displayName": "Academic Lab Advisor",
+  "description": "Generate structured Jupyter notebooks for data science learning.",
+  "version": "0.1.0",
+  "publisher": "academiclab",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:academicLabAdvisor.start",
+    "onCommand:academicLabAdvisor.generateNotebook",
+    "onCommand:academicLabAdvisor.openSettings",
+    "onView:academicLabAdvisorView"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "academicLabAdvisor.start",
+        "title": "Academic Lab Advisor: Open"
+      },
+      {
+        "command": "academicLabAdvisor.generateNotebook",
+        "title": "Academic Lab Advisor: Generate Notebook"
+      },
+      {
+        "command": "academicLabAdvisor.openSettings",
+        "title": "Academic Lab Advisor: Open Settings"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "academicLabAdvisor",
+          "title": "Academic Lab Advisor",
+          "icon": "media/icons/activitybar.svg"
+        }
+      ]
+    },
+    "views": {
+      "academicLabAdvisor": [
+        {
+          "id": "academicLabAdvisorView",
+          "name": "Advisor",
+          "type": "webview"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Academic Lab Advisor",
+      "properties": {
+        "academicLabAdvisor.openaiApiKey": {
+          "type": "string",
+          "default": "",
+          "format": "password",
+          "description": "OpenAI API Key for notebook generation"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "node ./dist/test/runTest.js",
+    "vsce:package": "vsce package",
+    "vsce:publish": "vsce publish"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0",
+    "vsce": "^2.0.0"
+  }
+}
