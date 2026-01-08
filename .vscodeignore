@@ -1,0 +1,16 @@
+**/.DS_Store
+**/*.log
+**/*.ts
+**/*.map
+
+.github/**
+.vscode/**
+node_modules/**
+test/**
+templates/**
+
+src/**
+
+README.md
+DEVELOPMENT.md
+instructions.md
