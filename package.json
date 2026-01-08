@@ -2,7 +2,8 @@
   "name": "academic-lab-advisor",
   "displayName": "Academic Lab Advisor",
   "description": "Generate structured Jupyter notebooks for data science learning.",
-  "version": "0.1.1",
+  "version": "0.1.4",
+  "icon": "media/icons/icon.png",
   "publisher": "AcademicLabEdu2",
   "license": "MIT",
   "repository": {
@@ -42,7 +43,7 @@
         {
           "id": "academicLabAdvisor",
           "title": "Academic Lab Advisor",
-          "icon": "media/icons/activitybar.svg"
+          "icon": "media/icons/icon.png"
         }
       ]
     },

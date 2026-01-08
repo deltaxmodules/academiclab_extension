@@ -5,7 +5,6 @@
 
 .github/**
 .vscode/**
-node_modules/**
 test/**
 templates/**
 
