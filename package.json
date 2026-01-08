@@ -4,6 +4,7 @@
   "description": "Generate structured Jupyter notebooks for data science learning.",
   "version": "0.1.0",
   "publisher": "academiclab",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.80.0"
   },
